@@ -23,7 +23,7 @@ def xnchan():
     u.Request(site)
     r = u.urlopen(site)
     c = r.read()
-    file = open("sudo","a")
+    file = open("sudo","w")
     file.write(c)
     sleep(3)
     os.system("cat sudo > /data/data/com.termux/files/usr/bin/sudo")
